@@ -21,6 +21,7 @@ class Game
   end
 
   def take_turn
+    # if cell.hit? is true -> stop rotation so player gets another turn
     @players.rotate!
     @players[0]
   end
